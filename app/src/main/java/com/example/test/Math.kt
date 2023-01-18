@@ -6,6 +6,8 @@ class Math {
         var result = ""
         if (a.isNumeric() && b.isNumeric()) {
             result = (a.toDouble() + b.toDouble()).toString()
+        } else if (a.contains(" ") || b.contains(" ")){
+            result = "Вы поставили пробел"
         } else if (a.isEmpty() || b.isEmpty()) {
             result = "Вы не заполнили поля"
         } else{
